@@ -47,3 +47,8 @@ test
 prompt
 
 server.log
+
+# User excluded files
+src/components/AlonScene.tsx
+.agent
+.agents
