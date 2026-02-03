@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     description: "Your confident and slightly mischievous lobster hero AI. OpenClaw is here to help you, mostly.",
   },
   icons: {
-    icon: "/iddle.jpeg",
+    icon: "/iddle.png",
   },
 };
 

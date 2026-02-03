@@ -91,7 +91,7 @@ export function AlonScene({ isSpeaking = false }: AlonSceneProps) {
         >
           <div className="animate-float-gentle">
             <Image
-              src="/iddle.jpeg"
+              src="/iddle.png"
               alt="OpenClaw"
               width={640}
               height={800}
