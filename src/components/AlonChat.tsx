@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback } from "react";
 import { useAudio } from "@/hooks/useAudio";
-import { AlonScene } from "./AlonScene";
+import { AlonSceneComponent } from "./AlonSceneComponent";
 
 interface Message {
   id: string;
@@ -244,7 +244,7 @@ export function AlonChat() {
 
 
       {/* Alon Avatar Background */}
-      <AlonScene isSpeaking={isSpeaking} />
+      <AlonSceneComponent isSpeaking={isSpeaking} />
 
       {/* Chat Interface Layer */}
       <div
