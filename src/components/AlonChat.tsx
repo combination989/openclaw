@@ -6,7 +6,7 @@ import { AlonScene } from "./AlonScene";
 
 interface Message {
   id: string;
-  role: "user" | "openclaw";
+  role: "user" | "molt-companion";
   content: string;
   timestamp: number;
 }
@@ -109,8 +109,8 @@ export function AlonChat() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      role: "openclaw",
-      content: "Yo, I'm OpenClaw, the Lobster Champion! What's cracking?",
+      role: "molt-companion",
+      content: "Yo, I'm Molt companion, the Lobster Champion! What's cracking?",
       timestamp: Date.now(),
     },
   ]);
@@ -169,7 +169,7 @@ export function AlonChat() {
         const chatHistory = messages
           .slice(-10)
           .map((msg) => ({
-            role: msg.role === "openclaw" ? "assistant" : "user",
+            role: msg.role === "molt-companion" ? "assistant" : "user",
             content: msg.content,
           }));
 
@@ -193,14 +193,14 @@ export function AlonChat() {
         const data = await response.json();
         const aiContent = data.content || "I'm sorry, I couldn't respond right now.";
 
-        const messageId = `openclaw-${Date.now()}`;
+        const messageId = `molt-companion-${Date.now()}`;
 
         setTypingMessageId(messageId);
         setTypingProgress(0);
 
         const aiMessage: Message = {
           id: messageId,
-          role: "openclaw",
+          role: "molt-companion",
           content: aiContent,
           timestamp: Date.now(),
         };
@@ -224,8 +224,8 @@ export function AlonChat() {
       } catch (error) {
         console.error("Chat error:", error);
         const errorMessage: Message = {
-          id: `openclaw-${Date.now()}`,
-          role: "openclaw",
+          id: `molt-companion-${Date.now()}`,
+          role: "molt-companion",
           content: "I'm sorry, something went wrong. Please try again.",
           timestamp: Date.now(),
         };
@@ -285,7 +285,7 @@ export function AlonChat() {
               )}
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-              <span className="input-brand text-xs tracking-wider uppercase opacity-60 hidden sm:block">OpenClaw Agent</span>
+              <span className="input-brand text-xs tracking-wider uppercase opacity-60 hidden sm:block">Molt companion</span>
               <a
                 href="https://x.com/alonbyclaude"
                 target="_blank"

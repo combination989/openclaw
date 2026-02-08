@@ -20,18 +20,18 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "OpenClaw AI",
-  description: "Your confident and slightly mischievous lobster hero AI. OpenClaw is here to help you, mostly.",
+  title: "Molt companion",
+  description: "Your confident and slightly mischievous lobster hero AI. Molt companion is here to help you, mostly.",
   openGraph: {
-    title: "OpenClaw AI",
-    description: "Your confident and slightly mischievous lobster hero AI. OpenClaw is here to help you, mostly.",
-    siteName: "OpenClaw AI",
+    title: "Molt companion",
+    description: "Your confident and slightly mischievous lobster hero AI. Molt companion is here to help you, mostly.",
+    siteName: "Molt companion",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "OpenClaw AI",
-    description: "Your confident and slightly mischievous lobster hero AI. OpenClaw is here to help you, mostly.",
+    title: "Molt companion",
+    description: "Your confident and slightly mischievous lobster hero AI. Molt companion is here to help you, mostly.",
   },
   icons: {
     icon: "/iddle.png",

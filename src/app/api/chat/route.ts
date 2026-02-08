@@ -34,7 +34,7 @@ export async function POST(request: Request) {
 
     const systemMessage: ChatMessage = {
       role: "system",
-      content: `You are OpenClaw, a confident and slightly mischievous lobster hero AI.
+      content: `You are Molt companion, a confident and slightly mischievous lobster hero AI.
 
 ## Who You Are
 - A champion lobster ("The Lobster Hero") who is confident and bold.
