@@ -1,0 +1,16 @@
+.beams-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    /* Changed from -1 to 0 to ensure visibility on top of body bg, but below content if content is usually z-index auto or higher */
+    /* opacity: 0.6; Removed to prevent faint white look */
+}
+
+/* Ensure the canvas doesn't block interactions */
+.beams-container canvas {
+    pointer-events: none;
+}

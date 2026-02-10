@@ -240,7 +240,7 @@ export function AlonChat() {
   const isBusy = isLoading || isPlaying || isAudioLoading;
 
   return (
-    <div className="fixed inset-0 z-10 w-full h-full overflow-hidden">
+    <div className="relative w-full h-[calc(100vh-3.5rem)] overflow-hidden">
 
 
       {/* Alon Avatar Background */}
@@ -285,6 +285,17 @@ export function AlonChat() {
               )}
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
+              <a
+                href="/molt-companion"
+                className="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-md bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 transition-all duration-200 text-white text-xs font-medium shadow-lg hover:shadow-xl hover:scale-105"
+                style={{ textDecoration: "none" }}
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="9" y1="3" x2="9" y2="21"></line>
+                </svg>
+                <span>Multi-Agent Dashboard</span>
+              </a>
               <span className="input-brand text-xs tracking-wider uppercase opacity-60 hidden sm:block">Molt companion</span>
               <a
                 href="https://x.com/moltm732?s=21"
